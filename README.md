@@ -5,18 +5,19 @@ Experiment: can [PEP 725](https://peps.python.org/pep-0725/) `[external]` metada
 
 ## Inputs
 
-- `external_metadata/` — `[external]` tables for the 37 top-150 PyPI packages that need a compiler,
-  written by the PEP authors for their build experiment
-  ([rgommers/external-deps-build](https://github.com/rgommers/external-deps-build)).
-- `registry/` — `registry.json` and `nix.mapping.json` from
-  [jaimergp/external-metadata-mappings](https://github.com/jaimergp/external-metadata-mappings).
+Both inputs are git submodules under `vendor/`, pinned to the commits the results below were
+produced with:
 
-Both are copied unchanged under their original licenses (MIT and BSD-3-Clause), included as
-`LICENSE` in each directory. Snapshot taken 2026-10-02.
+- [rgommers/external-deps-build](https://github.com/rgommers/external-deps-build) @ `0ac1d64` —
+  `[external]` tables for the 37 top-150 PyPI packages that need a compiler, written by the PEP
+  authors for their build experiment (`external_metadata/`).
+- [jaimergp/external-metadata-mappings](https://github.com/jaimergp/external-metadata-mappings)
+  @ `c409926` — the PEP 804 registry, including `data/nix.mapping.json`.
 
 ## Usage
 
 ```sh
+git clone --recursive https://github.com/arunoruto/pep725-nix   # or: git submodule update --init
 python3 pep725_to_nix.py generate numpy   # writes out/numpy.nix, prints every mapping decision
 python3 pep725_to_nix.py build numpy      # nix build against the nixpkgs flake registry entry
 python3 pep725_to_nix.py compare          # diff PEP 725 inputs vs nixpkgs' hand-written ones

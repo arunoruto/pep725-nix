@@ -3,10 +3,10 @@
 
 The script combines three inputs:
 
-1. An ``[external]`` table (PEP 725), either from ``external_metadata/<pkg>.toml``
+1. An ``[external]`` table (PEP 725), either from the ``external-deps-build`` submodule
    (tables written by the PEP authors for the top-150 PyPI experiment) or from
    the sdist's own ``pyproject.toml`` if upstream ships one.
-2. The Nix mapping from the PEP 804 registry (``registry/nix.mapping.json``).
+2. The Nix mapping from the PEP 804 registry (``external-metadata-mappings`` submodule).
 3. The sdist's ``[build-system]`` and ``[project]`` tables, for the Python side.
 
 It writes ``out/<pkg>.nix`` (a ``python3Packages.callPackage``-able derivation)
@@ -39,8 +39,8 @@ from packaging.requirements import Requirement
 from packaging.utils import canonicalize_name
 
 ROOT = Path(__file__).resolve().parent
-METADATA_DIR = ROOT / "external_metadata"
-NIX_MAPPING = ROOT / "registry" / "nix.mapping.json"
+METADATA_DIR = ROOT / "vendor" / "external-deps-build" / "external_metadata"
+NIX_MAPPING = ROOT / "vendor" / "external-metadata-mappings" / "data" / "nix.mapping.json"
 OUT_DIR = ROOT / "out"
 
 NIXPKGS = 'import (builtins.getFlake "nixpkgs") {}'

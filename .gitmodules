@@ -1,0 +1,6 @@
+[submodule "vendor/external-deps-build"]
+	path = vendor/external-deps-build
+	url = https://github.com/rgommers/external-deps-build
+[submodule "vendor/external-metadata-mappings"]
+	path = vendor/external-metadata-mappings
+	url = https://github.com/jaimergp/external-metadata-mappings
