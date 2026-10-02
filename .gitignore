@@ -1,0 +1,4 @@
+__pycache__/
+result*
+out/*.log
+discourse-post.md

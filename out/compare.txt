@@ -1,0 +1,37 @@
+aiohttp              diff   only in PEP 725: -                              only in nixpkgs: llhttp
+bcrypt               match  only in PEP 725: -                              only in nixpkgs: -
+cffi                 diff   only in PEP 725: -                              only in nixpkgs: pkg-config
+charset-normalizer   match  only in PEP 725: -                              only in nixpkgs: -
+coverage             match  only in PEP 725: -                              only in nixpkgs: -
+cryptography         diff   only in PEP 725: libffi                         only in nixpkgs: maturin
+frozenlist           match  only in PEP 725: -                              only in nixpkgs: -
+google-crc32c        diff   only in PEP 725: -                              only in nixpkgs: crc32c
+greenlet             match  only in PEP 725: -                              only in nixpkgs: -
+grpcio               diff   only in PEP 725: -                              only in nixpkgs: c-ares, openssl, pkg-config, zlib
+grpcio-tools         match  only in PEP 725: -                              only in nixpkgs: -
+httptools            match  only in PEP 725: -                              only in nixpkgs: -
+kiwisolver           match  only in PEP 725: -                              only in nixpkgs: -
+lxml                 diff   only in PEP 725: -                              only in nixpkgs: pkg-config
+markupsafe           match  only in PEP 725: -                              only in nixpkgs: -
+matplotlib           diff   only in PEP 725: -                              only in nixpkgs: ffmpeg-headless, freetype, qhull
+msgpack              match  only in PEP 725: -                              only in nixpkgs: -
+multidict            match  only in PEP 725: -                              only in nixpkgs: -
+numpy                diff   only in PEP 725: ninja                          only in nixpkgs: -
+pandas               diff   only in PEP 725: ninja                          only in nixpkgs: pkg-config
+pillow               diff   only in PEP 725: libjpeg, tk, zlib              only in nixpkgs: libavif, libjpeg-turbo, pkg-config, zlib-ng
+protobuf             match  only in PEP 725: -                              only in nixpkgs: -
+psutil               match  only in PEP 725: -                              only in nixpkgs: -
+psycopg2-binary      diff   only in PEP 725: libpqxx                        only in nixpkgs: install-shell-files, libpq
+pyarrow              diff   only in PEP 725: clang, llvm, ninja, zlib       only in nixpkgs: arrow-cpp, pkg-config
+pycryptodomex        diff   only in PEP 725: gmp-with-cxx                   only in nixpkgs: -
+pydantic-core        diff   only in PEP 725: -                              only in nixpkgs: maturin
+pynacl               diff   only in PEP 725: -                              only in nixpkgs: install-shell-files, libsodium
+pyrsistent           match  only in PEP 725: -                              only in nixpkgs: -
+pyyaml               match  only in PEP 725: -                              only in nixpkgs: -
+regex                match  only in PEP 725: -                              only in nixpkgs: -
+rpds-py              diff   only in PEP 725: -                              only in nixpkgs: maturin
+scikit-learn         diff   only in PEP 725: -                              only in nixpkgs: gfortran, glibc-locales, openblas
+scipy                diff   only in PEP 725: ninja                          only in nixpkgs: boost, nuke-refs, qhull, xsimd
+sqlalchemy           match  only in PEP 725: -                              only in nixpkgs: -
+wrapt                diff   only in PEP 725: -                              only in nixpkgs: install-shell-files
+yarl                 match  only in PEP 725: -                              only in nixpkgs: -

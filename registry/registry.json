@@ -1,0 +1,239 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jaimergp/external-metadata-mappings/main/schemas/central-registry.schema.json",
+  "schema_version": 1,
+  "definitions": [
+    {
+      "id": "dep:generic/arrow",
+      "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics"
+    },
+    {
+      "id": "dep:generic/clang",
+      "description": "Language front-end and tooling infrastructure for languages in the C language family for the LLVM project."
+    },
+    {
+      "id": "dep:generic/cmake",
+      "description": "CMake is a cross-platform, open-source build system generator."
+    },
+    {
+      "id": "dep:generic/cmake?repository_url=https://gitlab.kitware.com/cmake/cmake",
+      "description": "CMake is a cross-platform, open-source build system generator. With canonical URL.",
+      "provides": "dep:generic/cmake"
+    },
+    {
+      "id": "dep:generic/freetype",
+      "description": "FreeType is a freely available software library to render fonts."
+    },
+    {
+      "id": "dep:generic/git",
+      "description": "Git is a free and open source distributed version control system."
+    },
+    {
+      "id": "dep:generic/gmp",
+      "description": "The GNU Multiple Precision Arithmetic Library"
+    },
+    {
+      "id": "dep:generic/lcms2",
+      "description": "Little Color Management System"
+    },
+    {
+      "id": "dep:generic/libffi",
+      "description": "A portable foreign-function interface library"
+    },
+    {
+      "id": "dep:generic/libimagequant",
+      "description": "Imagequant library converts RGBA images to palette-based 8-bit indexed images, including alpha component"
+    },
+    {
+      "id": "dep:generic/libjpeg",
+      "description": "Libjpeg is a widely used C library for reading and writing JPEG image files developed by the IJG"
+    },
+    {
+      "id": "dep:generic/libpq",
+      "description": "libpq is a set of library functions that allow client programs to pass queries to the PostgreSQL backend server and to receive the results of these queries"
+    },
+    {
+      "id": "dep:generic/libraqm",
+      "description": "Raqm is a small library that encapsulates the logic for complex text layout"
+    },
+    {
+      "id": "dep:generic/libsodium",
+      "description": "A modern, portable, easy to use crypto library"
+    },
+    {
+      "id": "dep:generic/libtiff",
+      "description": "The LibTIFF software provides support for the Tag Image File Format (TIFF), a widely used format for storing image data."
+    },
+    {
+      "id": "dep:generic/libwebp",
+      "description": "WebP codec is a library to encode and decode images in WebP format. This package contains the library that can be used in other programs to add WebP support"
+    },
+    {
+      "id": "dep:generic/libxcb",
+      "description": "libxcb provides an interface to the X Window System protocol, which replaces the traditional Xlib interface"
+    },
+    {
+      "id": "dep:generic/libxml2",
+      "description": "libxml2 is an XML toolkit implemented in C, originally developed for the GNOME Project"
+    },
+    {
+      "id": "dep:generic/libxslt",
+      "description": "Libxslt is the XSLT C library developed for the GNOME project. XSLT itself is a an XML language to define transformation for XML"
+    },
+    {
+      "id": "dep:generic/libyaml",
+      "description": "A C library for parsing and emitting YAML"
+    },
+    {
+      "id": "dep:generic/llvm",
+      "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies."
+    },
+    {
+      "id": "dep:generic/make",
+      "description": "GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files"
+    },
+    {
+      "id": "dep:generic/ninja",
+      "description": "A small build system with a focus on speed"
+    },
+    {
+      "id": "dep:generic/openblas",
+      "description": "OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library based on GotoBLAS2 1.13 BSD version.",
+      "provides": [
+        "dep:virtual/interface/blas"
+      ]
+    },
+    {
+      "id": "dep:generic/openjpeg",
+      "description": "OpenJPEG is an open-source JPEG 2000 codec written in C language"
+    },
+    {
+      "id": "dep:generic/openssl",
+      "description": "OpenSSL is a robust, commercial-grade, full-featured Open Source Toolkit for the TLS (formerly SSL), DTLS and QUIC (currently client side only) protocols"
+    },
+    {
+      "id": "dep:generic/patch",
+      "description": "Apply a diff file to an original"
+    },
+    {
+      "id": "dep:generic/pkg-config",
+      "description": "pkg-config is a helper tool used when compiling applications and libraries"
+    },
+    {
+      "id": "dep:generic/python",
+      "description": "The Python interpreter"
+    },
+    {
+      "id": "dep:generic/tk",
+      "description": "Tk is a graphical user interface toolkit that takes developing desktop applications to a higher level than conventional approaches"
+    },
+    {
+      "id": "dep:generic/zlib",
+      "description": "A Massively Spiffy Yet Delicately Unobtrusive Compression Library"
+    },
+    {
+      "id": "dep:github/Kitware/CMake",
+      "description": "CMake is a cross-platform, open-source build system generator. GitHub mirror.",
+      "provides": "dep:generic/cmake"
+    },
+    {
+      "id": "dep:github/OpenMathLib/OpenBLAS",
+      "description": "OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library based on GotoBLAS2 1.13 BSD version.",
+      "provides": [
+        "dep:virtual/interface/blas",
+        "dep:generic/openblas"
+      ]
+    },
+    {
+      "id": "dep:github/Reference-LAPACK/lapack",
+      "description": "LAPACK development repository",
+      "provides": [
+        "dep:virtual/interface/blas",
+        "dep:virtual/interface/lapack"
+      ]
+    },
+    {
+      "id": "dep:github/apache/arrow",
+      "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics",
+      "provides": [
+        "dep:generic/arrow"
+      ]
+    },
+    {
+      "id": "dep:github/llvm/llvm-project",
+      "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
+      "provides": "dep:generic/llvm"
+    },
+    {
+      "id": "dep:virtual/compiler/c",
+      "description": "Compiler for the C language."
+    },
+    {
+      "id": "dep:virtual/compiler/c-sharp",
+      "description": "Compiler for the C# language."
+    },
+    {
+      "id": "dep:virtual/compiler/cuda",
+      "description": "Compiler for the CUDA language"
+    },
+    {
+      "id": "dep:virtual/compiler/cxx",
+      "description": "Compiler for the C++ language"
+    },
+    {
+      "id": "dep:virtual/compiler/fortran",
+      "description": "Compiler for the FORTRAN language"
+    },
+    {
+      "id": "dep:virtual/compiler/go",
+      "description": "Compiler for the Go language"
+    },
+    {
+      "id": "dep:virtual/compiler/javascript",
+      "description": "Compiler for the JavaScript language"
+    },
+    {
+      "id": "dep:virtual/compiler/obj-c",
+      "description": "Compiler for the Objective C language"
+    },
+    {
+      "id": "dep:virtual/compiler/obj-cxx",
+      "description": "Compiler for the Objective C++ language"
+    },
+    {
+      "id": "dep:virtual/compiler/ocaml",
+      "description": "Compiler for the OCaml language"
+    },
+    {
+      "id": "dep:virtual/compiler/rust",
+      "description": "Compiler for the Rust language"
+    },
+    {
+      "id": "dep:virtual/compiler/swift",
+      "description": "Compiler for the Swift language"
+    },
+    {
+      "id": "dep:virtual/compiler/typescript",
+      "description": "Compiler for the TypeScript language"
+    },
+    {
+      "id": "dep:virtual/compiler/zig",
+      "description": "Compiler for the Zig language"
+    },
+    {
+      "id": "dep:virtual/interface/blas",
+      "description": "Interface for Basic Linear Algebra Subprograms"
+    },
+    {
+      "id": "dep:virtual/interface/lapack",
+      "description": "Interface for Linear Algebra PACKage"
+    },
+    {
+      "id": "dep:virtual/interface/mpi",
+      "description": "Interface for MPI (Message Passing Interface)"
+    },
+    {
+      "id": "dep:virtual/interface/openmp",
+      "description": "Interface for OpenMP multiprocessing"
+    }
+  ]
+}
